@@ -4,6 +4,8 @@ const boxes = document.querySelectorAll('.box');
 // Function to display the question and options
 function displayQuestionAndOptions(day) {
     // You can create an array of questions and options corresponding to each day
+
+const correctAnswerForBox2 = "Groundhog day"; // Replace with the actual correct answer
     // Define hints for box 2
 const hintsForBox2 = [
     "Hint 1: Det er en julefilm",
@@ -13,7 +15,6 @@ const hintsForBox2 = [
     "Hint 5: En ny dag truer"
 ];
 
-// Variable to keep track of the current hint index for box 2
 let currentHintIndexForBox2 = 0;
 
 // Function to display hints and allow guesses for box 2
@@ -25,9 +26,10 @@ function displayHintsAndGuessForBox2() {
         // Ask the user to make a guess for box 2
         const userGuess = prompt("Hvilken film tror du det er?");
         
-        // Check if the user's guess is correct for box 2
-        if (userGuess && userGuess.toLowerCase() === "Groundhog day") {
-            alert("Riktig!!");
+        // Check if the user's guess is correct for box 2 (case-insensitive)
+        if (userGuess && userGuess.toLowerCase() === correctAnswerForBox2.toLowerCase()) {
+            alert("Koooorrekt! Dagens film blir Groundhog day");
+            currentHintIndexForBox2 = hintsForBox2.length; // Set hint index to max to stop further hints
         } else {
             // Increment the hint index for box 2 for the next hint
             currentHintIndexForBox2++;
@@ -36,7 +38,7 @@ function displayHintsAndGuessForBox2() {
         }
     } else {
         // No more hints left for box 2, display a message
-        alert("Bedre lykke i morgen");
+        alert("Du er tom for hints, bedre lykke til i morgen.");
     }
 }
 
