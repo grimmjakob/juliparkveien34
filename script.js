@@ -60,9 +60,9 @@ boxes[1].addEventListener('click', () => {
             correctAnswer: "Groundhog day"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "I dagens film reiser vi inn i et snøbelagt univers, som tar i bruk magiske gjenstander og vi møter på fantasifulle skapninger som griffiner og fenikser. Hvilket filmunivers skal vi til?",
+            options: ["Narnia", "Harry Potter", "Percy Jackson"],
+            correctAnswer: "Narnia"
         },
         {
             question: "What is the capital of France?",
