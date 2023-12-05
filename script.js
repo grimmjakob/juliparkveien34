@@ -47,6 +47,52 @@ boxes[1].addEventListener('click', () => {
     // Call the function to display hints and allow guesses for box 2
     displayHintsAndGuessForBox2();
 });
+// Define the correct answer for box 5
+const correctAnswerForBox5 = "Clockwork Orange"; // Replace with the actual correct answer
+
+// Define hints for box 5
+const hintsForBox5 = [
+    "Hint 1: gammel klassiker",
+    "Hint 2: frukt",
+    "Hint 3: alf har spurt om å se den sånn 10 ganger",
+    "Hint 4: 1971",
+    "Hint 5: klokka slår"
+];
+
+// Variable to keep track of the current hint index for box 5
+let currentHintIndexForBox5 = 0;
+
+// Function to display hints and allow guesses for box 5
+function displayHintsAndGuessForBox5() {
+    if (currentHintIndexForBox5 < hintsForBox5.length) {
+        // Display the current hint for box 5
+        alert(hintsForBox5[currentHintIndexForBox5]);
+
+        // Ask the user to make a guess for box 5
+        const userGuess = prompt("Hvilken film?");
+        
+        // Check if the user's guess is correct for box 5 (case-insensitive)
+        if (userGuess && userGuess.toLowerCase() === correctAnswerForBox5.toLowerCase()) {
+            alert("Correct! You guessed it right for box 5!");
+            currentHintIndexForBox5 = hintsForBox5.length; // Set hint index to max to stop further hints
+        } else {
+            // Increment the hint index for box 5 for the next hint
+            currentHintIndexForBox5++;
+            // Display the next hint and allow another guess for box 5
+            displayHintsAndGuessForBox5();
+        }
+    } else {
+        // No more hints left for box 5, display a message
+        alert("You've run out of hints for box 5.");
+    }
+}
+
+// Add click event listener to box 5
+boxes[4].addEventListener('click', () => {
+    // Call the function to display hints and allow guesses for box 5
+    displayHintsAndGuessForBox5();
+});
+
 
     const questionsAndOptions = [
         {
@@ -70,12 +116,12 @@ boxes[1].addEventListener('click', () => {
             correctAnswer: "Paris"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "trykk en gang til på boxen for å få et hint",
+            options: [""],
+            correctAnswer: "Groundhog day"
         },
         {
-            question: "What is the capital of France?",
+            question: "?",
             options: ["Paris", "Berlin", "Madrid"],
             correctAnswer: "Paris"
         },
