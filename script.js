@@ -111,9 +111,9 @@ boxes[4].addEventListener('click', () => {
             correctAnswer: "Narnia"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "Det er ikke dag 4 i dag.",
+            options: ["Tulling", "Tulling", "Tulling"],
+            correctAnswer: "Tulling"
         },
         {
             question: "trykk en gang til på boxen for å få et hint",
@@ -121,14 +121,9 @@ boxes[4].addEventListener('click', () => {
             correctAnswer: "Groundhog day"
         },
         {
-            question: "?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
-        },
-        {
-            question: "Det er ikke dag 4 i dag?",
-            options: ["Tulling", "Tulling", "Tulling"],
-            correctAnswer: "Tulling"
+            question: "Jeg er keen på Edward Norton film, er det en du ikke har sett?",
+            options: ["American History X", "Primal Fear", "Birdman"],
+            correctAnswer: "Primal Dear"
         },
         {
             question: "What is the capital of France?",
