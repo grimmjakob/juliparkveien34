@@ -126,9 +126,9 @@ boxes[4].addEventListener('click', () => {
             correctAnswer: "Paris"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "Det er ikke dag 4 i dag?",
+            options: ["Tulling", "Tulling", "Tulling"],
+            correctAnswer: "Tulling"
         },
         {
             question: "What is the capital of France?",
