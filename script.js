@@ -139,6 +139,51 @@ boxes[9].addEventListener('click', () => {
     displayHintsAndGuessForBox10();
 });
 
+// Define the correct answer for box 5
+const correctAnswerForBox12 = "Birdman"; // Replace with the actual correct answer
+
+// Define hints for box 5
+const hintsForBox12 = [
+    "Hint 1: Alan Garner",
+    "Hint 2: Holy Flax",
+    "Hint 3: Mia",
+    "Hint 4: Jack Moore/(Tyler Durden)",
+    "Hint 5: Bruce Wayne/Batman"
+];
+
+// Variable to keep track of the current hint index for box 5
+let currentHintIndexForBox12 = 0;
+
+// Function to display hints and allow guesses for box 5
+function displayHintsAndGuessForBox12() {
+    if (currentHintIndexForBox12 < hintsForBox12.length) {
+        // Display the current hint for box 5
+        alert(hintsForBox10[currentHintIndexForBox12]);
+
+        // Ask the user to make a guess for box 5
+        const userGuess = prompt("Hvilken film?");
+        
+        // Check if the user's guess is correct for box 5 (case-insensitive)
+        if (userGuess && userGuess.toLowerCase() === correctAnswerForBox12.toLowerCase()) {
+            alert("Correct! You guessed it right for box 12!");
+            currentHintIndexForBox12 = hintsForBox12.length; // Set hint index to max to stop further hints
+        } else {
+            // Increment the hint index for box 5 for the next hint
+            currentHintIndexForBox12++;
+            // Display the next hint and allow another guess for box 5
+            displayHintsAndGuessForBox12();
+        }
+    } else {
+        // No more hints left for box 5, display a message
+        alert("You've run out of hints for box 12.");
+    }
+}
+
+// Add click event listener to box 5
+boxes[11].addEventListener('click', () => {
+    // Call the function to display hints and allow guesses for box 5
+    displayHintsAndGuessForBox12();
+
 
     const questionsAndOptions = [
         {
@@ -147,7 +192,7 @@ boxes[9].addEventListener('click', () => {
             correctAnswer: "Into the wild"
         },
         {
-            question: "trykk en gang til på boxen for å få et hint",
+            question: "trykk en gang til på boksen for å få et hint",
             options: [""],
             correctAnswer: "Groundhog day"
         },
@@ -162,7 +207,7 @@ boxes[9].addEventListener('click', () => {
             correctAnswer: "Tulling"
         },
         {
-            question: "trykk en gang til på boxen for å få et hint",
+            question: "trykk en gang til på boksen for å få et hint",
             options: [""],
             correctAnswer: "Groundhog day"
         },
@@ -197,13 +242,13 @@ boxes[9].addEventListener('click', () => {
             correctAnswer: "When Harry meet Sally"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "trykk en gang til på boksen for å få et hint. Dette er Film/serie karakterer spilt av skuespiller i denne filmen, vrien men mulig",
+            options: [""],
+            correctAnswer: "Groundhog day"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
+            question: "CIINNNEEEEMATTTEEEEKET",
+            options: ["TOKYO", "GOD", "FATHERS"],
             correctAnswer: "Paris"
         },
         {
