@@ -93,6 +93,52 @@ boxes[4].addEventListener('click', () => {
     displayHintsAndGuessForBox5();
 });
 
+// Define the correct answer for box 5
+const correctAnswerForBox10 = "Eternal sunshine of the spotless mind"; // Replace with the actual correct answer
+
+// Define hints for box 5
+const hintsForBox10 = [
+    "Hint 1: Snø",
+    "Hint 2: Jim Carrey",
+    "Hint 3: Klementin",
+    "Hint 4: Ikke Komedie",
+    "Hint 5: Sårbar"
+];
+
+// Variable to keep track of the current hint index for box 5
+let currentHintIndexForBox10 = 0;
+
+// Function to display hints and allow guesses for box 5
+function displayHintsAndGuessForBox10() {
+    if (currentHintIndexForBox10 < hintsForBox10.length) {
+        // Display the current hint for box 5
+        alert(hintsForBox10[currentHintIndexForBox10]);
+
+        // Ask the user to make a guess for box 5
+        const userGuess = prompt("Hvilken film?");
+        
+        // Check if the user's guess is correct for box 5 (case-insensitive)
+        if (userGuess && userGuess.toLowerCase() === correctAnswerForBox10.toLowerCase()) {
+            alert("Correct! You guessed it right for box 10!");
+            currentHintIndexForBox10 = hintsForBox10.length; // Set hint index to max to stop further hints
+        } else {
+            // Increment the hint index for box 5 for the next hint
+            currentHintIndexForBox10++;
+            // Display the next hint and allow another guess for box 5
+            displayHintsAndGuessForBox10();
+        }
+    } else {
+        // No more hints left for box 5, display a message
+        alert("You've run out of hints for box 10.");
+    }
+}
+
+// Add click event listener to box 5
+boxes[9].addEventListener('click', () => {
+    // Call the function to display hints and allow guesses for box 5
+    displayHintsAndGuessForBox10();
+});
+
 
     const questionsAndOptions = [
         {
@@ -123,7 +169,7 @@ boxes[4].addEventListener('click', () => {
         {
             question: "Jeg er keen på Edward Norton film, er det en du ikke har sett?",
             options: ["American History X", "Primal Fear", "Birdman"],
-            correctAnswer: "Primal Dear"
+            correctAnswer: "Primal Fear"
         },
         {
             question: "Vi trenger en wild film til, men hvem er med huttetuene?",
@@ -131,24 +177,24 @@ boxes[4].addEventListener('click', () => {
             correctAnswer: "Where the wild things are"
         },
         {
-            question: "En film som jeg så absoulutt vil vise dere er med mr seymour hoffman. Denne er vond, men jeg elsker det!",
+            question: "En film som jeg så absoulutt vil vise dere er med mr Seymour Hoffman. Denne er vond, men jeg elsker det!",
             options: ["The Talented Mr. Ripley", "Capote", "The Master"],
             correctAnswer: "The Master"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "La oss komme i litt julestemning med en norsk julefilm?",
+            options: ["Pitbul Terje", "Hjem til Jul", "My Norwegian Holiday"],
+            correctAnswer: "Pitbul Terje"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "trykk en gang til på boksen for å få et hint",
+            options: [""],
+            correctAnswer: "Groundhog day"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "Vi holder oss til romanse, vi trenger en klassiker?",
+            options: ["The Apartment", "When Harry meet Sally", "Love Actually"],
+            correctAnswer: "When Harry meet Sally"
         },
         {
             question: "What is the capital of France?",
