@@ -93,10 +93,10 @@ boxes[4].addEventListener('click', () => {
     displayHintsAndGuessForBox5();
 });
 
-// Define the correct answer for box 5
+// Define the correct answer for box 10
 const correctAnswerForBox10 = "Eternal sunshine of the spotless mind"; // Replace with the actual correct answer
 
-// Define hints for box 5
+// Define hints for box 10
 const hintsForBox10 = [
     "Hint 1: Snø",
     "Hint 2: Jim Carrey",
@@ -105,44 +105,44 @@ const hintsForBox10 = [
     "Hint 5: Sårbar"
 ];
 
-// Variable to keep track of the current hint index for box 5
+// Variable to keep track of the current hint index for box 10
 let currentHintIndexForBox10 = 0;
 
-// Function to display hints and allow guesses for box 5
+// Function to display hints and allow guesses for box 10
 function displayHintsAndGuessForBox10() {
     if (currentHintIndexForBox10 < hintsForBox10.length) {
-        // Display the current hint for box 5
+        // Display the current hint for box 10
         alert(hintsForBox10[currentHintIndexForBox10]);
 
-        // Ask the user to make a guess for box 5
+        // Ask the user to make a guess for box 10
         const userGuess = prompt("Hvilken film?");
         
-        // Check if the user's guess is correct for box 5 (case-insensitive)
+        // Check if the user's guess is correct for box 10 (case-insensitive)
         if (userGuess && userGuess.toLowerCase() === correctAnswerForBox10.toLowerCase()) {
             alert("Correct! You guessed it right for box 10!");
             currentHintIndexForBox10 = hintsForBox10.length; // Set hint index to max to stop further hints
         } else {
-            // Increment the hint index for box 5 for the next hint
+            // Increment the hint index for box 10 for the next hint
             currentHintIndexForBox10++;
-            // Display the next hint and allow another guess for box 5
+            // Display the next hint and allow another guess for box 10
             displayHintsAndGuessForBox10();
         }
     } else {
-        // No more hints left for box 5, display a message
+        // No more hints left for box 10, display a message
         alert("You've run out of hints for box 10.");
     }
 }
 
-// Add click event listener to box 5
+// Add click event listener to box 10
 boxes[9].addEventListener('click', () => {
-    // Call the function to display hints and allow guesses for box 5
+    // Call the function to display hints and allow guesses for box 10
     displayHintsAndGuessForBox10();
 });
 
-// Define the correct answer for box 5
+// Define the correct answer for box 12
 const correctAnswerForBox12 = "Birdman"; // Replace with the actual correct answer
 
-// Define hints for box 5
+// Define hints for box 12
 const hintsForBox12 = [
     "Hint 1: Alan Garner",
     "Hint 2: Holy Flax",
@@ -151,39 +151,39 @@ const hintsForBox12 = [
     "Hint 5: Bruce Wayne/Batman"
 ];
 
-// Variable to keep track of the current hint index for box 5
+// Variable to keep track of the current hint index for box 12
 let currentHintIndexForBox12 = 0;
 
-// Function to display hints and allow guesses for box 5
+// Function to display hints and allow guesses for box 12
 function displayHintsAndGuessForBox12() {
     if (currentHintIndexForBox12 < hintsForBox12.length) {
-        // Display the current hint for box 5
-        alert(hintsForBox10[currentHintIndexForBox12]);
+        // Display the current hint for box 12
+        alert(hintsForBox12[currentHintIndexForBox12]);
 
-        // Ask the user to make a guess for box 5
+        // Ask the user to make a guess for box 12
         const userGuess = prompt("Hvilken film?");
         
-        // Check if the user's guess is correct for box 5 (case-insensitive)
+        // Check if the user's guess is correct for box 12 (case-insensitive)
         if (userGuess && userGuess.toLowerCase() === correctAnswerForBox12.toLowerCase()) {
             alert("Correct! You guessed it right for box 12!");
             currentHintIndexForBox12 = hintsForBox12.length; // Set hint index to max to stop further hints
         } else {
-            // Increment the hint index for box 5 for the next hint
+            // Increment the hint index for box 12 for the next hint
             currentHintIndexForBox12++;
-            // Display the next hint and allow another guess for box 5
+            // Display the next hint and allow another guess for box 12
             displayHintsAndGuessForBox12();
         }
     } else {
-        // No more hints left for box 5, display a message
+        // No more hints left for box 12, display a message
         alert("You've run out of hints for box 12.");
     }
 }
 
-// Add click event listener to box 5
+// Add click event listener to box 12
 boxes[11].addEventListener('click', () => {
-    // Call the function to display hints and allow guesses for box 5
+    // Call the function to display hints and allow guesses for box 12
     displayHintsAndGuessForBox12();
-
+});
 
     const questionsAndOptions = [
         {
@@ -249,17 +249,17 @@ boxes[11].addEventListener('click', () => {
         {
             question: "CIINNNEEEEMATTTEEEEKET",
             options: ["TOKYO", "GOD", "FATHERS"],
-            correctAnswer: "Paris"
+            correctAnswer: ""
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "Holder oss til Animasjon, med en av den vakreste, tristeste og fineste animasjonsfilmen jeg vet om?",
+            options: ["Grave of the fireflies", "Your Name", "Up"],
+            correctAnswer: "Grave of the fireflies"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "Animation appreciation, denne gang jule animasjon?",
+            options: ["The Nightmare before Christmas", "A Christmas Carol", "Klaus"],
+            correctAnswer: "Klaus"
         },
         {
             question: "What is the capital of France?",
