@@ -126,14 +126,14 @@ boxes[4].addEventListener('click', () => {
             correctAnswer: "Primal Dear"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "Vi trenger en wild film til, men hvem er med huttetuene?",
+            options: ["Hunt for the Wilderpeople", "Wild at heart", "Where the wild things are"],
+            correctAnswer: "Where the wild things are"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "En film som jeg så absoulutt vil vise dere er med mr seymour hoffman. Denne er vond, men jeg elsker det!",
+            options: ["The Talented Mr. Ripley", "Capote", "The Master"],
+            correctAnswer: "The Master"
         },
         {
             question: "What is the capital of France?",
