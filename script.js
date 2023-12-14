@@ -280,6 +280,11 @@ boxes[11].addEventListener('click', () => {
             question: "La oss ta en titt på russisk film?",
             options: ["Come and See", "Stalker", "Nostalghia"],
             correctAnswer: "Come and See"
+        },        
+        {
+            question: "Film med tekst",
+            options: ["City of God", "High and Low", "Seven Samurais"],
+            correctAnswer: "City of God"
         },
         {
             question: "Kiiinooooo?",
