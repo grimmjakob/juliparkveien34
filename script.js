@@ -262,43 +262,43 @@ boxes[11].addEventListener('click', () => {
             correctAnswer: "Klaus"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "First? First what?",
+            options: ["First Man", "First Reformed", "First Cow"],
+            correctAnswer: "First Reformed"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "En gammel film men som må bli sett, og det om julen!",
+            options: ["Its a wonderful life", "The Apartment", "12 Angry Men"],
+            correctAnswer: "Its a wonderful life"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "krigs filmer er jo fett!",
+            options: ["Saving private Ryan", "1917", "Hacksaw Ridge"],
+            correctAnswer: "Saving private Ryan"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "La oss ta en titt på russisk film?",
+            options: ["Come and See", "Stalker", "Nostalghia"],
+            correctAnswer: "Come and See"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "Kiiinooooo?",
+            options: ["Past Lives", "Gutten og hegren", "GODZILLA MINUS ONE"],
+            correctAnswer: "Past Lives"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "Litt norsk før vi skal hjemover",
+            options: ["Oslo, 31. August", "Home for Christmas", "Mongoland"],
+            correctAnswer: "Mongoland"
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
-            correctAnswer: "Paris"
+            question: "Det er lillejulaften og dere trenger en juleklassiker, velg mellom disse:",
+            options: ["Elf", "Hjelp, det er juleferie!", "Hjemme Alene"],
+            correctAnswer: ""
         },
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Madrid"],
+            question: "Hvis det av en eller annen grunn skulle blitt sett en film på julaften, må det virkelig være en helt eksepsjonell film. Så her er mine tre forslag:",
+            options: ["Portrait of a lady on fire", "About Time", "Madrid"],
             correctAnswer: "Paris"
         },
         // Add questions and options for each day
