@@ -144,11 +144,11 @@ const correctAnswerForBox12 = "Birdman"; // Replace with the actual correct answ
 
 // Define hints for box 12
 const hintsForBox12 = [
-    "Hint 1: Alan Garner",
-    "Hint 2: Holy Flax",
-    "Hint 3: Mia",
-    "Hint 4: Jack Moore/(Tyler Durden)",
-    "Hint 5: Bruce Wayne/Batman"
+    "Hint 1: Alan Garner, The Hangover",
+    "Hint 2: Holy Flax, The Office",
+    "Hint 3: Mia, La La Land",
+    "Hint 4: Jack Moore/(Tyler Durden), Fight club",
+    "Hint 5: Bruce Wayne/Batman, Batman(1989)"
 ];
 
 // Variable to keep track of the current hint index for box 12
