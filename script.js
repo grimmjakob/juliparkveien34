@@ -298,7 +298,7 @@ boxes[11].addEventListener('click', () => {
         },
         {
             question: "Hvis det av en eller annen grunn skulle blitt sett en film på julaften, må det virkelig være en helt eksepsjonell film. Så her er mine tre forslag:",
-            options: ["Portrait of a lady on fire", "Its a wonderful life", "The night before Christmas"],
+            options: ["Portrait of a lady on fire", "Its a wonderful life", "The nightmare before Christmas"],
             correctAnswer: "Paris"
         },
         // Add questions and options for each day
